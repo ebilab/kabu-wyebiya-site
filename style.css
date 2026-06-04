@@ -56,6 +56,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* スマホで意図しない横スクロールが発生するのを防止
+     (どこかの要素が幅をはみ出してもページ全体が広がらない) */
+  overflow-x: hidden;
 }
 
 body {
@@ -1134,11 +1137,10 @@ li {
 }
 
 .filter-bar__label {
-  width: 100%;
   font-size: 0.78rem;
   letter-spacing: 0.12em;
   color: var(--color-brown-light);
-  margin: 0 0 0.2em;
+  margin: 0 0 0.5em;
 }
 
 .filter-bar__btn {
@@ -1412,10 +1414,20 @@ li {
   .modal__dialog {
     padding: var(--space-lg) var(--space-md) var(--space-md);
     max-height: 92vh;
+    /* 画面幅を超えない安全装置 */
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .modal__title {
     margin-top: var(--space-md);
+  }
+
+  /* モーダル内の長い文字列が万一はみ出すケースに備えて */
+  .modal__content {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
 
@@ -1442,6 +1454,14 @@ body.is-modal-open {
     font-size: 15.5px;
   }
 
+  /* スマホでは backdrop-filter を解除し、固定配置の子要素を正常動作させる
+     (backdrop-filter は CSS仕様上、固定/絶対配置の包含ブロックを作るため) */
+  .site-header {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: var(--color-bg);
+  }
+
   .site-nav__list {
     position: fixed;
     inset: 72px 0 0;
@@ -1454,6 +1474,7 @@ body.is-modal-open {
     transition: transform 0.25s ease;
     border-top: 1px solid var(--color-border);
     overflow-y: auto;
+    box-shadow: var(--shadow-md);
   }
 
   .site-nav__list[data-open="true"] {
