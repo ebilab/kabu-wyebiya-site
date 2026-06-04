@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ゑびやの実践から学ぶ AI活用・DX推進の講演／研修／現場見学</title>
-  <meta name="description" content="創業150年の老舗食堂ゑびやで実践してきたAI活用・DX推進・データ活用をもとに、企業・自治体・教育機関・商工団体向けの講演、研修、現場見学プログラムをご案内します。" />
+  <title>ゑびやグループ実践メモ｜AI活用・データ活用・業務改善の取り組み一覧</title>
+  <meta name="description" content="ゑびや・EBILAB・wyEBIYAなど、ゑびやグループ内で実際に試しているAI活用、データ活用、業務改善、販促施策、店舗施策の取り組みをカード形式で一覧表示します。" />
 
   <!-- OGP -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="ゑびやの実践から学ぶ AI活用・DX推進の講演／研修／現場見学" />
-  <meta property="og:description" content="創業150年の老舗食堂ゑびやで実践してきたAI活用・DX推進・データ活用をもとに、講演・研修・現場見学プログラムをご案内します。" />
-  <meta property="og:url" content="https://example.github.io/wyebiya-site/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ゑびやグループ実践メモ｜AI活用・データ活用・業務改善の取り組み一覧" />
+  <meta property="og:description" content="ゑびや・EBILAB・wyEBIYAなど、ゑびやグループ内で実際に試しているAI・データ活用の取り組み一覧です。" />
+  <meta property="og:url" content="https://example.github.io/wyebiya-site/practice.html" />
   <meta property="og:image" content="https://example.github.io/wyebiya-site/images/ogp.jpg" />
   <meta property="og:site_name" content="株式会社wyEBIYA 講演・研修・現場見学" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="canonical" href="https://example.github.io/wyebiya-site/" />
+  <link rel="canonical" href="https://example.github.io/wyebiya-site/practice.html" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,11 +35,11 @@
           <span></span>
         </button>
         <ul id="primary-menu" class="site-nav__list" data-open="false">
-          <li><a href="index.html" class="site-nav__link" aria-current="page">トップ</a></li>
+          <li><a href="index.html" class="site-nav__link">トップ</a></li>
           <li><a href="lecture.html" class="site-nav__link">講演</a></li>
           <li><a href="training.html" class="site-nav__link">研修</a></li>
           <li><a href="tour.html" class="site-nav__link">現場見学</a></li>
-          <li><a href="practice.html" class="site-nav__link">実践メモ</a></li>
+          <li><a href="practice.html" class="site-nav__link" aria-current="page">実践メモ</a></li>
           <li><a href="https://ebilab.jp/contact/" class="site-nav__cta" target="_blank" rel="noopener">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -51,158 +51,77 @@
     <!-- ========== ファーストビュー ========== -->
     <section class="hero">
       <div class="container hero__inner">
-        <span class="hero__kicker">LECTURE / TRAINING / TOUR</span>
+        <span class="hero__kicker">PRACTICAL NOTES</span>
         <h1 class="hero__title">
-          <span>ゑびやの実践から学ぶ</span>
-          <span>AI活用・DX推進の講演／研修／現場見学</span>
+          <span>ゑびやグループ実践メモ</span>
         </h1>
         <p class="hero__sub">
-          創業150年の老舗食堂「ゑびや」で実践してきた、データ活用・AI活用・業務改善の取り組みをもとに、企業・自治体・教育機関・商工団体向けに、講演・研修・現場見学プログラムを提供しています。
+          ゑびや・EBILAB・wyEBIYAなど、ゑびやグループ内で実際に試しているAI活用、データ活用、業務改善、販促施策、店舗施策などの取り組みを一覧でご紹介します。
         </p>
         <p class="hero__note">
-          単なるツール紹介や理論ではなく、実際の店舗運営の中で試行錯誤してきた事例をもとに、現場で活かせるDX・AI活用のヒントをお伝えします。
+          特別なことではなく、日々の業務や店舗づくりの中で試している取り組みを記録しています。新しい取り組みがあれば、随時このページに追加していきます。
         </p>
-        <div class="btn-group">
-          <a href="https://ebilab.jp/contact/" class="btn btn--primary btn--lg" target="_blank" rel="noopener">講演・研修について問い合わせる</a>
-        </div>
-        <p class="btn-note">※EBILABお問い合わせフォームへ移動します。</p>
       </div>
     </section>
 
-    <!-- ========== セクション1: 位置づけ ========== -->
+    <!-- ========== 実践メモ 一覧 ==========
+         カードを追加する場合は、下の <article class="practice-card"> ... </article>
+         ブロックをコピーして内容を書き換えてください。
+         必須:
+           - data-categories="カテゴリ1 カテゴリ2"   絞り込み対象になります(空白区切り)
+                 利用可能カテゴリ:
+                 AI活用 / データ活用 / 販促・デザイン /
+                 業務改善 / 店舗施策 / 講演・研修準備 / 資料作成
+         一覧カード内の構造 (見える部分):
+           - .practice-card__image        … 画像 (images/ に jpg を配置)
+                                              画像を実際に配置したら、その div に
+                                              data-has-image="true" を追加すると
+                                              data-placeholder のプレースホルダ文字
+                                              (画像中央のオーバーレイ) が非表示になります。
+           - .practice-card__categories   … 実施主体+カテゴリのチップ行
+                                              <li class="...__chip--brand"> が実施主体
+           - .practice-card__title        … タイトル
+           - .practice-card__summary      … 概要文 (2〜3行)
+           - .practice-card__more         … 詳しく見るボタン (モーダルを開く)
+         モーダル詳細用 (画面には表示されない):
+           - <template class="practice-card__detail">
+               中に modal__title / modal__rows / modal__row(dt/dd) を書く
+               モーダル表示時に JS でこの中身が複製される
+         ================================================ -->
     <section class="section">
       <div class="container">
-        <span class="section__kicker">About this site</span>
-        <h2 class="section__title">小田島春樹による講演・ゑびやの現場見学を中心にご案内します</h2>
-
-        <!-- 左:プロフィール写真 / 右:本文 のグリッド
-             画像配置後は profile-figure__image に data-has-image="true" を追加 -->
-        <div class="about-grid">
-          <figure class="profile-figure">
-            <div
-              class="profile-figure__image"
-              role="img"
-              aria-label="代表 小田島春樹"
-              data-placeholder="代表プロフィール写真"
-              data-has-image="true"
-              style="background-image: url('images/odajima.jpg');"
-            ></div>
-            <figcaption class="profile-figure__caption">
-              <span class="profile-figure__name">小田島 春樹</span>
-              <span class="profile-figure__title">株式会社wyEBIYA 代表</span>
-            </figcaption>
-          </figure>
-          <div class="about-grid__body">
-            <p class="section__lead">
-              EBILABでは、DX人材育成やデータ活用をテーマとした講演・教育事業を展開しています。本サイトでは、その中でも代表 小田島春樹による講演や、ゑびやの実践事例・現場見学を含むプログラムを中心にご紹介します。
-            </p>
-            <p>
-              AI活用、DX推進、データ経営、店舗改善、事業承継など、ゑびや・EBILABでの実践をもとに、目的や対象者に応じた内容をご提案します。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== セクション2: こんな方におすすめ ========== -->
-    <section class="section section--alt">
-      <div class="container">
-        <span class="section__kicker">For you</span>
-        <h2 class="section__title">こんな方におすすめ</h2>
-        <ul class="list-checked">
-          <li>AIを活用したいが、日常業務への落とし込み方が分からない</li>
-          <li>DX推進を進めたいが、現場の行動変化につながっていない</li>
-          <li>データを見ているものの、改善施策に活かしきれていない</li>
-          <li>小規模事業者や店舗でも実践できるAI・DX活用事例を知りたい</li>
-          <li>地域事業者向けのDX・AI活用セミナーを企画している</li>
-          <li>実際にデータ活用を進めている店舗現場を見学したい</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ========== セクション3: 3つのプログラム ========== -->
-    <section class="section">
-      <div class="container">
-        <span class="section__kicker">Programs</span>
-        <h2 class="section__title">3つのプログラム</h2>
+        <span class="section__kicker">All entries</span>
+        <h2 class="section__title">実践メモ 一覧</h2>
         <p class="section__lead">
-          講演・研修・現場見学の3つの形式で、目的や対象者に合わせてご提案します。
+          ゑびや・EBILAB・wyEBIYAそれぞれの現場で、日常の業務改善や店舗づくりの中で取り組んでいる内容をカード形式でご紹介します。カテゴリで絞り込んでご覧いただけます。
         </p>
-        <div class="cards">
 
-          <article class="card card--program" data-img="lecture">
-            <div class="card__image" role="img" aria-label="講演イメージ"></div>
-            <span class="card__num">01</span>
-            <h3 class="card__title">講演</h3>
-            <p class="card__body">
-              AI・DX・データ活用を、実践事例から分かりやすく学ぶ。企業、自治体、商工団体、教育機関向けに、目的に応じた内容で実施します。
-            </p>
-            <a href="lecture.html" class="card__link">講演ページを見る →</a>
-          </article>
-
-          <article class="card card--program" data-img="training">
-            <div class="card__image" role="img" aria-label="研修イメージ"></div>
-            <span class="card__num">02</span>
-            <h3 class="card__title">研修・ワークショップ</h3>
-            <p class="card__body">
-              学んで終わりではなく、自社で使うための実践型研修。ワークやディスカッションを交え、現場での活用を具体化します。
-            </p>
-            <a href="training.html" class="card__link">研修ページを見る →</a>
-          </article>
-
-          <article class="card card--program" data-img="tour">
-            <div class="card__image" role="img" aria-label="現場見学イメージ"></div>
-            <span class="card__num">03</span>
-            <h3 class="card__title">現場見学・ゑびやツアー</h3>
-            <p class="card__body">
-              実際の店舗現場を見て、DX・データ活用を体感する。ゑびやでの取り組みを、見学・食事・講話を通じて学べます。
-            </p>
-            <a href="tour.html" class="card__link">現場見学ページを見る →</a>
-          </article>
-
+        <!-- ===== カテゴリ絞り込み =====
+             ボタンの data-filter にカテゴリ名を入れると、
+             該当カテゴリのカードのみ表示されます。
+             カテゴリを追加するときは、ここに <button> を追加し、
+             同じ文字列を各カードの data-categories にも記載してください。
+             ============================== -->
+        <div class="filter-bar" data-filter-bar role="group" aria-label="カテゴリで絞り込む">
+          <p class="filter-bar__label">カテゴリで絞り込む</p>
+          <button type="button" class="filter-bar__btn is-active" data-filter="all" aria-pressed="true">すべて</button>
+          <button type="button" class="filter-bar__btn" data-filter="AI活用" aria-pressed="false">AI活用</button>
+          <button type="button" class="filter-bar__btn" data-filter="データ活用" aria-pressed="false">データ活用</button>
+          <button type="button" class="filter-bar__btn" data-filter="販促・デザイン" aria-pressed="false">販促・デザイン</button>
+          <button type="button" class="filter-bar__btn" data-filter="業務改善" aria-pressed="false">業務改善</button>
+          <button type="button" class="filter-bar__btn" data-filter="店舗施策" aria-pressed="false">店舗施策</button>
+          <button type="button" class="filter-bar__btn" data-filter="講演・研修準備" aria-pressed="false">講演・研修準備</button>
+          <button type="button" class="filter-bar__btn" data-filter="資料作成" aria-pressed="false">資料作成</button>
         </div>
 
-        <!-- 中部 CTA -->
-        <div class="cta-inline">
-          <a href="https://ebilab.jp/contact/" class="btn btn--primary" target="_blank" rel="noopener">講演・研修について問い合わせる</a>
-          <p class="btn-note">※EBILABお問い合わせフォームへ移動します。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== セクション4: ゑびや・EBILABだから ========== -->
-    <section class="section section--alt">
-      <div class="container">
-        <span class="section__kicker">Why us</span>
-        <h2 class="section__title">机上の理論ではなく、現場で試行錯誤してきた実践知</h2>
-        <p>
-          ゑびや・EBILABの特徴は、実際の店舗運営の中でデータ活用やAI活用に取り組んできた点にあります。来客予測、売上分析、業務効率化、現場改善など、実際の業務で活用してきた事例をもとに、成功事例だけでなく、現場に浸透させるうえでの工夫や課題もお伝えします。
-        </p>
-        <p>
-          AIやDXを「導入して終わり」にするのではなく、日々の業務や意思決定にどう活かすか。その実践に基づいた内容を、目的に応じて分かりやすくご案内します。
-        </p>
-      </div>
-    </section>
-
-    <!-- ========== ゑびやグループ実践メモ ==========
-         一覧カードは概要文 + 「詳しく見る」ボタンの構成。
-         詳細情報は各カード内の <template class="practice-card__detail">
-         に保持し、ボタンクリックでモーダル表示します。
-         カード構造の詳細は practice.html 内のコメントを参照してください。
-         ============================================ -->
-    <section class="section">
-      <div class="container">
-        <span class="section__kicker">Practical notes</span>
-        <h2 class="section__title">日々の業務や店舗づくりの中で試している、AI・データ活用の実践</h2>
-        <p>
-          ゑびやグループでは、AIやデータを特別なものとしてではなく、日々の業務改善、販促物の検討、商品訴求、資料作成、現場判断などの中で活用しています。
-        </p>
-        <p>
-          ここでは、ゑびや・EBILAB・wyEBIYAなど、グループ内で実際に試している取り組みの一部を「実践メモ」として紹介します。完成した制作物や取り組みの過程もあわせて掲載しながら、現場でどのように活用しているかをお伝えします。
+        <!-- 表示件数 (絞り込み結果の件数を動的に表示) -->
+        <p class="filter-count" aria-live="polite">
+          表示中：<strong data-filter-count>3</strong>件
         </p>
 
         <div class="practice-list">
 
+          <!-- ===== 実践メモ 1 ===== -->
           <article class="practice-card" data-categories="AI活用 販促・デザイン 店舗施策">
             <div
               class="practice-card__image"
@@ -228,6 +147,7 @@
               </button>
             </div>
 
+            <!-- モーダルに表示される詳細情報 (画面には表示されません) -->
             <template class="practice-card__detail">
               <ul class="practice-card__categories">
                 <li class="practice-card__chip practice-card__chip--brand">ゑびや</li>
@@ -253,6 +173,7 @@
             </template>
           </article>
 
+          <!-- ===== 実践メモ 2 ===== -->
           <article class="practice-card" data-categories="AI活用 資料作成 講演・研修準備">
             <div
               class="practice-card__image"
@@ -302,6 +223,7 @@
             </template>
           </article>
 
+          <!-- ===== 実践メモ 3 ===== -->
           <article class="practice-card" data-categories="AI活用 データ活用 業務改善">
             <div
               class="practice-card__image"
@@ -351,46 +273,44 @@
             </template>
           </article>
 
+          <!-- ▼ ここから先に新しい <article class="practice-card"> を追加してください ▼ -->
+
         </div>
 
-        <!-- 一覧ページへの導線 -->
-        <div class="notes-all-link">
-          <a href="practice.html" class="btn btn--ghost">ゑびやグループ実践メモをすべて見る</a>
-        </div>
+        <!-- 絞り込み結果0件のときに表示 -->
+        <p class="filter-empty" data-filter-empty hidden>
+          選択中のカテゴリに該当する実践メモはまだありません。
+        </p>
       </div>
     </section>
 
-    <!-- ========== セクション5: 流れ ========== -->
-    <section class="section">
-      <div class="container">
-        <span class="section__kicker">Process</span>
-        <h2 class="section__title">ご相談から実施までの流れ</h2>
-        <ol class="steps">
-          <li>お問い合わせ</li>
-          <li>ヒアリング</li>
-          <li>内容のご提案</li>
-          <li>お見積り・日程調整</li>
-          <li>実施</li>
-          <li>実施後のご相談</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ========== セクション6: 対応体制 ========== -->
+    <!-- ========== 関連プログラム ========== -->
     <section class="section section--alt">
       <div class="container">
-        <span class="section__kicker">Operation</span>
-        <h2 class="section__title">対応体制について</h2>
-        <div class="callout">
-          <p>
-            本サービスは、ゑびや・EBILABで培ってきた店舗運営、データ活用、AI活用、DX推進の知見をもとに提供しています。
-          </p>
-          <p>
-            ご相談内容や実施体制に応じて、株式会社EBILABまたは株式会社wyEBIYAにて対応・ご契約を進めさせていただく場合がございます。なお、TOUCH POINT BIやデータ連携、BI活用支援を含む内容については、株式会社EBILABにて対応いたします。
-          </p>
-          <p style="margin-bottom: 0;">
-            どちらに該当するか分からない場合も、まずはお気軽にお問い合わせください。内容を確認のうえ、適切な形でご案内いたします。
-          </p>
+        <span class="section__kicker">Related</span>
+        <h2 class="section__title">関連プログラム</h2>
+        <p class="section__lead">
+          実践メモで紹介している取り組みの背景は、講演・研修・現場見学プログラムでも詳しくお伝えしています。
+        </p>
+        <div class="cards">
+          <article class="card card--program" data-img="lecture">
+            <div class="card__image" role="img" aria-label="講演イメージ"></div>
+            <h3 class="card__title">講演</h3>
+            <p class="card__body">AI・DX・データ活用を、実践事例から分かりやすく学ぶ講演プログラムです。</p>
+            <a href="lecture.html" class="card__link">講演ページを見る →</a>
+          </article>
+          <article class="card card--program" data-img="training">
+            <div class="card__image" role="img" aria-label="研修イメージ"></div>
+            <h3 class="card__title">研修・ワークショップ</h3>
+            <p class="card__body">学んで終わりではなく、自社で使うための実践型研修プログラムです。</p>
+            <a href="training.html" class="card__link">研修ページを見る →</a>
+          </article>
+          <article class="card card--program" data-img="tour">
+            <div class="card__image" role="img" aria-label="現場見学イメージ"></div>
+            <h3 class="card__title">現場見学・ゑびやツアー</h3>
+            <p class="card__body">実際の店舗現場を見て、DX・データ活用を体感するプログラムです。</p>
+            <a href="tour.html" class="card__link">現場見学ページを見る →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -401,7 +321,7 @@
         <div class="cta-block">
           <h2>講演・研修・現場見学に関するご相談はこちら</h2>
           <p>
-            講演・研修・現場見学に関するお問い合わせは、EBILABお問い合わせフォームにて受け付けております。ご相談内容を確認のうえ、内容に応じた実施方法をご案内いたします。
+            実践メモで紹介している取り組みを、講演や研修、現場見学プログラムを通じてさらに詳しくお伝えすることも可能です。お気軽にお問い合わせください。
           </p>
           <a href="https://ebilab.jp/contact/" class="btn btn--primary btn--lg" target="_blank" rel="noopener">講演・研修について問い合わせる</a>
           <p class="btn-note">※EBILABお問い合わせフォームへ移動します。</p>
@@ -449,8 +369,8 @@
   </footer>
 
   <!-- ========== 詳細モーダル ==========
-       「詳しく見る」ボタンで開きます。
-       各カードの <template class="practice-card__detail"> の中身が
+       practice.html の「詳しく見る」ボタンで開きます。
+       各カード内の <template class="practice-card__detail"> の中身が
        data-modal-content の中に複製挿入されます。
        閉じる手段: ×ボタン / 背景クリック / Esc キー
        ============================== -->
