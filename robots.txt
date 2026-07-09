@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.github.io/wyebiya-site/sitemap.xml
+Sitemap: https://wyebiya.ebilab.jp/sitemap.xml
