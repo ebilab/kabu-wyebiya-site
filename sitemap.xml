@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.github.io/wyebiya-site/</loc>
+    <loc>https://wyebiya.ebilab.jp/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.github.io/wyebiya-site/lecture.html</loc>
+    <loc>https://wyebiya.ebilab.jp/lecture.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.github.io/wyebiya-site/training.html</loc>
+    <loc>https://wyebiya.ebilab.jp/training.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.github.io/wyebiya-site/tour.html</loc>
+    <loc>https://wyebiya.ebilab.jp/tour.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.github.io/wyebiya-site/practice.html</loc>
+    <loc>https://wyebiya.ebilab.jp/practice.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
